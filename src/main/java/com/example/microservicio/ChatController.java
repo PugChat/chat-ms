@@ -18,18 +18,18 @@ import java.util.List;
 public class ChatController {
     @Autowired
     private ChatRepository repository;
-    /*
+    
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public List<ChatModel> getAllChats() {
         return repository.findAll();
-    }*/
-
+    }
+    /*
     @RequestMapping(value = "/{emisor}/{receptor}", method = RequestMethod.GET)
     public List<ChatModel> getChatByEmiRec(@PathVariable int emisor, @PathVariable int receptor) {
         return repository.findByEmisorAndReceptor(emisor,receptor);
     }
-
-    /*@RequestMapping(value = "/{id}", method = RequestMethod.PUT)
+    
+    @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
     public void modifyPetById(@PathVariable("id") ObjectId id, @Valid @RequestBody ChatModel chatModel) {
         chatModel.set_id(id);
         repository.save(chatModel);

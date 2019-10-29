@@ -9,7 +9,7 @@ public class ChatModel {
     public ObjectId _id;
 
     public int emisor;
-    public int receptor;
+    //public int receptor;
     public String mensaje;
     public Date fecha;
 
@@ -17,10 +17,10 @@ public class ChatModel {
 
     public ChatModel() {}
 
-    public ChatModel(ObjectId _id, int emisor, int receptor, String mensaje, Date fecha) {
+    public ChatModel(ObjectId _id, int emisor, /*int receptor,*/ String mensaje, Date fecha) {
         this._id = _id;
         this.emisor = emisor;
-        this.receptor = receptor;
+        //this.receptor = receptor;
         this.mensaje = mensaje;
         this.fecha = fecha;
     }
@@ -32,8 +32,8 @@ public class ChatModel {
     public int getEmisor() { return emisor; }
     public void setEmisor(int emisor) { this.emisor = emisor; }
 
-    public int getReceptor() { return receptor; }
-    public void setReceptor(int receptor) { this.receptor = receptor; }
+    //public int getReceptor() { return receptor; }
+    //public void setReceptor(int receptor) { this.receptor = receptor; }
 
     public String getMensaje() { return mensaje; }
     public void setMensaje(String mensaje) { this.mensaje = mensaje; }
