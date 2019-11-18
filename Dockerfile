@@ -12,3 +12,5 @@ COPY target/microservicio-0.0.1-SNAPSHOT.jar /app
  
 #Comando que se ejecutará una vez ejecutemos el contendor
 ENTRYPOINT ["java","-jar","microservicio-0.0.1-SNAPSHOT.jar"]
+
+EXPOSE 8080
