@@ -1,0 +1,4 @@
+com/example/microservicio/MicroservicioApplication.class
+com/example/microservicio/models/ChatModel.class
+com/example/microservicio/ChatController.class
+com/example/microservicio/repositories/ChatRepository.class
